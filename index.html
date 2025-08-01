@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agriculture Farming Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+    }
+
+    header {
+      background: #2e7d32;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #388e3c;
+    }
+
+    nav button {
+      background: none;
+      color: white;
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    nav button:hover {
+      background: #2e7d32;
+    }
+
+    .content {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌿 Agriculture Farming Platform</h1>
+    <p>Empowering Farmers, Connecting Communities</p>
+  </header>
+
+  <nav>
+    <button onclick="showTab('home')">Home</button>
+    <button onclick="showTab('about')">About Us</button>
+    <button onclick="showTab('tips')">Farming Tips</button>
+    <button onclick="showTab('products')">Marketplace</button>
+    <button onclick="showTab('community')">Farmer Connect</button>
+    <button onclick="showTab('contact')">Contact Us</button>
+    <button onclick="showTab('login')">Login/Register</button>
+  </nav>
+
+  <div class="content">
+    <div id="home" class="tab-content active">
+  <h2>Welcome to 🌿 AgriConnect – Your Smart Farming Companion</h2>
+  <p>
+    AgriConnect is a digital platform built to empower farmers, promote sustainable agriculture, and connect producers directly with buyers. Whether you’re a small-scale organic grower or a large-scale farmer, this is your space to grow, learn, and earn.
+  </p>
+
+  <hr>
+
+  <h3>🌱 Our Mission</h3>
+  <p>
+    To revolutionize agriculture by providing a centralized online platform for knowledge sharing, market access, and digital connectivity. We aim to eliminate the gap between rural farmers and urban consumers, while promoting organic, eco-friendly farming practices.
+  </p>
+
+  <hr>
+
+  <h3>🧭 Key Features</h3>
+  <div>
+    <ul>
+      <li><strong>🧑‍🌾 Farmer Support:</strong> Access guides, video tutorials, and crop-specific tips.</li>
+      <li><strong>🛒 Online Marketplace:</strong> List and sell your products directly to customers without middlemen.</li>
+      <li><strong>📅 Seasonal Tips:</strong> Get region-specific planting and harvesting guidance.</li>
+      <li><strong>💬 Community Forum:</strong> Ask questions and share knowledge with fellow farmers.</li>
+      <li><strong>📈 Growth Tools:</strong> Track prices, get news, and access government schemes.</li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <h3>🔥 This Month's Highlights</h3>
+  <ul>
+    <li><strong>🌾 Featured Guide:</strong> "10 Low-Cost Techniques to Improve Soil Fertility"</li>
+    <li><strong>🌧️ Seasonal Focus:</strong> Monsoon Crop Planner 2025</li>
+    <li><strong>🥭 Product Spotlight:</strong> Organic Alphonso Mangoes – Direct from Maharashtra</li>
+    <li><strong>📹 Video Pick:</strong> <a href="#">How to Set Up a Drip Irrigation System (Watch Now)</a></li>
+  </ul>
+
+  <hr>
+
+  <h3>🎯 Who Can Use AgriConnect?</h3>
+  <ul>
+    <li>✔️ Small and large-scale farmers</li>
+    <li>✔️ Agricultural students and researchers</li>
+    <li>✔️ Organic product buyers and distributors</li>
+    <li>✔️ NGOs and agricultural extension workers</li>
+  </ul>
+
+  <hr>
+
+  <h3>🚀 Ready to Start?</h3>
+  <p>Join our mission to make agriculture smarter, cleaner, and more profitable. Whether you're here to learn or to sell, your journey starts now.</p>
+  <button onclick="showTab('login')">Login / Register</button>
+  <button onclick="showTab('products')">Explore the Marketplace</button>
+  <button onclick="showTab('tips')">Browse Farming Tips</button>
+</div>
+
+
+    <div id="about" class="tab-content">
+      <h2>About Us</h2>
+      <p>This platform aims to support agricultural development and farmer empowerment.</p>
+      <ul>
+        <li><strong>Vision:</strong> Sustainable, tech-driven farming</li>
+        <li><strong>Mission:</strong> Bridge farmers and consumers</li>
+        <li><strong>Our Story:</strong> Built by a team passionate about rural innovation.</li>
+      </ul>
+    </div>
+
+    <div id="tips" class="tab-content">
+  <h2>🌾 Farming Tips</h2>
+  <p>
+    Explore modern farming methods, organic practices, and seasonal strategies designed to increase productivity and promote sustainable agriculture.
+  </p>
+
+  <hr>
+
+  <h3>🚜 Modern Techniques</h3>
+  <ul>
+    <li>Crop rotation and mixed cropping to improve soil fertility</li>
+    <li>Drip and sprinkler irrigation for water conservation</li>
+    <li>Use of sensors, IoT, and weather data in precision farming</li>
+  </ul>
+
+  <h3>🍀 Organic Methods</h3>
+  <ul>
+    <li>Composting kitchen and farm waste into nutrient-rich manure</li>
+    <li>Bio-pesticides like neem oil and garlic spray</li>
+    <li>Using green manure and cover crops to enrich the soil</li>
+  </ul>
+
+  <h3>📅 Seasonal Advice</h3>
+  <ul>
+    <li>Monsoon crops: Rice, maize, pulses, soybeans</li>
+    <li>Winter crops: Wheat, mustard, peas, carrots</li>
+    <li>Summer crops: Millets, cucumbers, gourds</li>
+  </ul>
+
+  <h3>🐛 Pest Control & Irrigation Guides</h3>
+  <ul>
+    <li>Manual removal and natural traps for pests</li>
+    <li>Drip irrigation setup and maintenance</li>
+    <li>Using cow dung slurry and compost tea for plant protection</li>
+  </ul>
+
+  <hr>
+
+  <h3>🎥 Featured Video: Organic Pest Control Using Neem Oil</h3>
+  <p>
+    Watch this expert-led tutorial on creating your own natural pesticides using neem, garlic, and other plant-based ingredients. Perfect for beginners and experienced organic farmers alike.
+  </p>
+
+  <!-- YouTube Video Embed -->
+  <iframe width="100%" height="315" 
+    src="https://youtu.be/fdD5EH5gWYI?si=ZRxnpmXF8287LDVC" 
+    title="Organic Pest Control Video" 
+    frameborder="0" 
+    allowfullscreen
+    style="border-radius:8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); margin: 1rem 0;">
+  </iframe>
+
+  <hr>
+
+  <h3>🗂️ Upcoming Sub-Tabs (Coming Soon)</h3>
+  <ul>
+    <li>🌽 Vegetables</li>
+    <li>🍎 Fruits</li>
+    <li>🌱 Soil Health</li>
+    <li>🌤️ Climate-based Farming</li>
+  </ul>
+</div>
+
+
+   <div id="products" class="tab-content">
+  <h2>🛒 Products / Marketplace</h2>
+  <p>
+    Explore fresh organic farm products listed directly by our trusted farmers. Support local agriculture and enjoy pesticide-free, naturally grown food.
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 1rem;">
+    <!-- Product 1 -->
+    <div style="flex: 1 1 300px; background: #fff; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); padding: 1rem;">
+      <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2" alt="Organic Tomatoes" style="width: 100%; border-radius: 6px; height: 180px; object-fit: cover;">
+      <h3>🍅 Organic Tomatoes</h3>
+      <p>Fresh, naturally ripened tomatoes grown without chemicals.</p>
+      <p><strong>Price:</strong> ₹40/kg</p>
+      <button style="background: #388e3c; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer;">Contact Farmer</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div style="flex: 1 1 300px; background: #fff; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); padding: 1rem;">
+      <img src="https://i.postimg.cc/DZ6kyw3q/bmw-m4.avif" alt="Organic Mangoes" style="width: 100%; border-radius: 6px; height: 180px; object-fit: cover;">
+      <h3>🥭 Organic Alphonso Mangoes</h3>
+      <p>Sweet and juicy mangoes directly from Maharashtra orchards.</p>
+      <p><strong>Price:</strong> ₹120/dozen</p>
+      <button style="background: #388e3c; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer;">Contact Farmer</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div style="flex: 1 1 300px; background: #fff; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); padding: 1rem;">
+      <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443" alt="Fresh Spinach" style="width: 100%; border-radius: 6px; height: 180px; object-fit: cover;">
+      <h3>🌿 Fresh Spinach (Palak)</h3>
+      <p>Locally grown green spinach leaves, rich in iron and vitamins.</p>
+      <p><strong>Price:</strong> ₹25/bunch</p>
+      <button style="background: #388e3c; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer;">Contact Farmer</button>
+    </div>
+  </div>
+
+  <hr style="margin: 2rem 0;">
+
+  <h3>📤 Want to Sell Your Products?</h3>
+  <p>
+    Are you a farmer or producer? Join our platform and list your organic goods directly in the marketplace.
+  </p>
+  <button onclick="alert('Redirecting to product submission form...')" style="background: #2e7d32; color: white; padding: 0.7rem 1.2rem; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer;">Sell Your Product</button>
+</div>
+
+
+    <div id="community" class="tab-content">
+      <h2>Farmer Connect / Community</h2>
+      <ul>
+        <li>Stories from real farmers</li>
+        <li>Discussion forums on modern techniques</li>
+        <li>Blog: Articles from agriculture experts</li>
+        <li>Comment and connect with peers</li>
+      </ul>
+    </div>
+
+    <div id="contact" class="tab-content">
+      <h2>Contact Us</h2>
+      <form>
+        <label>Name: <input type="text" name="name" required /></label><br><br>
+        <label>Email: <input type="email" name="email" required /></label><br><br>
+        <label>Message:<br>
+          <textarea rows="5" cols="40" required></textarea>
+        </label><br><br>
+        <button type="submit">Send Message</button>
+      </form>
+      <p>Email: support@farmconnect.com</p>
+      <p>Phone: +91-9876543210</p>
+      <p>Map: [Map Placeholder]</p>
+    </div>
+
+    <div id="login" class="tab-content">
+      <h2>Login / Register</h2>
+      <p>Access your dashboard to manage products or save farming tips.</p>
+      <form>
+        <label>Email: <input type="email" required /></label><br><br>
+        <label>Password: <input type="password" required /></label><br><br>
+        <button type="submit">Login</button> or <button type="button">Register</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Agriculture Farming Platform. All rights reserved.
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
